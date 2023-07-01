@@ -1,8 +1,7 @@
 // Number of buttons
 var numberOfButtons = document.querySelectorAll(".drum").length;
 
-//Iterate over the buttons to see, on which the event of "click" has 
-//been detected.
+//Iterate over the buttons to see, on which the event of "click" has been detected.
 for(var i=0; i<numberOfButtons; i++){
  
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
@@ -12,7 +11,7 @@ for(var i=0; i<numberOfButtons; i++){
     makeSound(buttonName);
 
     buttonAnimation(buttonName);
-    // alert(buttonName + " got clicked");
+    alert(buttonName + " got clicked");
 
   });
 
